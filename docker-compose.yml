@@ -2,17 +2,7 @@ version: '3'
 
 services:
    web:
-     image: nginx
-     hostname: nginx
-     depends_on:
-       - redis
+     image: "brentgroves/container-counts:0.1"
      ports:
-       - "8080:80"
-   redis:
-     image: redis
-     hostname: redis
-   apache:
-     image: httpd
-     hostname: apache
-     ports: 
-       - 80
+       - "80:80"
+       - "3030:3030"
