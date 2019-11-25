@@ -8,14 +8,15 @@ COPY . .
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
-RUN cd Kep13318 && npm install  
+RUN cd Kep13318 && npm install 
 
+RUN cd Periodic13318 && npm install 
 
 RUN cd Plex13318 && npm install 
 
 RUN cd MySql13318 && npm install 
 
-RUN cd Socket13318 && npm install 
+RUN cd BPGServices && npm install 
 
 RUN cd Express && npm install 
 
