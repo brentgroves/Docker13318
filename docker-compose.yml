@@ -4,8 +4,7 @@ services:
    web:
      image: "brentgroves/container-counts:0.2"
      ports:
-       - "80:80"
+       - "3000:3000"
        - "3030:3030"
-     environment: 
+     environment:
        - "TZ=America/Fort_Wayne"
-
